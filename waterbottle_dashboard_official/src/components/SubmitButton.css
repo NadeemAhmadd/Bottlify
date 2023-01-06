@@ -1,0 +1,7 @@
+.location{
+    width: 10rem;
+    z-index: 40;
+    position: fixed;
+    top: 90vh;
+    left: calc(82%);
+}
