@@ -8,10 +8,28 @@ import Guage from "./components/Guage";
 import "./App.css";
 import Thermometer from "react-thermometer-ecotropy";
 import "./tester.scss";
-
+import { UserData } from "./components/Data";
+import LineChart from "./components/Graph";
 
 function App() {
+  const [userData, setUserData] = useState({
+    labels: UserData.map((data) => data.year),
+    datasets: [
+      {
+        label: "Users Gained",
+        data: UserData.map((data) => data.userGain),
+        backgroundColor: [
+          "hsl(185, 28%, 40%)",
+
+        ],
+        borderColor: "black",
+        borderWidth: 2,
+      },
+    ],
+  });
+
   return (
+    
     
     <div class="bubbles">
       <div class="bubble"></div>
@@ -64,8 +82,18 @@ function App() {
       <div class="bubble"></div>
       <div class="bubble"></div>
       <div class="bubble"></div>
+     <div className="Graphposition">
+      <div className="cardgraph">
+      <div style={{ width: 700 }}>
+        <LineChart chartData={userData} />
+      </div>
+      </div>
+      </div>
+
+
       <div className="Knobposition">
       <div className="card">
+
         <Dial 
         />
       </div>
