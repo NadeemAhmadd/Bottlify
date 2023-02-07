@@ -10,6 +10,7 @@ import Thermometer from "react-thermometer-ecotropy";
 import "./tester.scss";
 import { UserData } from "./components/Data";
 import LineChart from "./components/Graph";
+import BluetoothButton from "./components/ConnectBluetoothButton";
 
 function App() {
   const [userData, setUserData] = useState({
@@ -27,6 +28,18 @@ function App() {
       },
     ],
   });
+//   window.onload = function () {
+
+//   document.querySelector("BluetoothButton").addEventListener("submit",
+//   function(event){
+//       event.stopPropagation()
+//       event.preventDefault()
+
+//       if (BluetoothButton.isWebBLEavailable()){
+//           BluetoothButton.getDeviceInfo()
+//       }
+//   })
+// };
 
   return (
     
@@ -98,6 +111,8 @@ function App() {
         />
       </div>
       </div>
+      <BluetoothButton/>
+      
       <Submitbutton/>
       <div className="Thermometerposition">
       <div className="cardthin">

@@ -1,0 +1,7 @@
+.bluetoothlocation{
+    width: 10rem;
+    z-index: 40;
+    position: fixed;
+    top: 5vh;
+    left: calc(1.5%);
+}
