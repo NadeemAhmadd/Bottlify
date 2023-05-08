@@ -11,8 +11,18 @@ import "./tester.scss";
 import { UserData } from "./components/Data";
 import LineChart from "./components/Graph";
 import BluetoothButton from "./components/ConnectBluetoothButton";
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
+  const uuid1 = uuidv4();
+  const uuid2 = uuidv4();
+  console.log(uuid1);
+  console.log(uuid2);
+  const items = [
+    { id: uuidv4(), name: 'Item 1' },
+    { id: uuidv4(), name: 'Item 2' },
+    { id: uuidv4(), name: 'Item 3' },
+  ];
   const [userData, setUserData] = useState({
     labels: UserData.map((data) => data.year),
     datasets: [
