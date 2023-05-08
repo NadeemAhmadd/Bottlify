@@ -1,4 +1,4 @@
-# Bottlify
+# HeatWave
 
 Bottlify is a two-part bottle consisting of a container top half and a temperature changer as the bottom half. The bottle can heat or cool the liquid inside the container based on user input. The code in this repository is for the Human Machine Interface (HMI) of the bottle as well as the arduino code to run the bottles circuts.
 
