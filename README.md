@@ -17,11 +17,4 @@ Bottlify is a two-part bottle consisting of a container top half and a temperatu
 - Real-time temperature monitoring and control.
 - User-friendly interface for controlling the temperature of the bottle.
 
-## Setup
-
-- Clone the repository.
-- Navigate to the project directory in your terminal.
-- Run `npm install` to install the dependencies.
-- Run `npm start` to start the development server.
-- Open http://localhost:3000 in your browser.
 
